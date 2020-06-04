@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="-8dp"
+    android:layout_marginEnd="4dp"
+    app:cardBackgroundColor="#778899"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        >
+
+        <TextView
+            android:id="@+id/stateNameShort"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="IN"
+            android:textSize="36dp"
+            android:textColor="#00FFFF"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/stateNameShort"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/locText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Madhya Pradesh"
+                android:textSize="24dp" />
+            <TextView
+                android:id="@+id/totalConfirmed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Confirmed: 12"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:id="@+id/dischargedText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Recovered: 10"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:id="@+id/deathsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Deaths: 2"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
